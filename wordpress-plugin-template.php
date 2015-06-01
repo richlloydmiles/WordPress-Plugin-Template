@@ -19,6 +19,10 @@
 
 if ( ! defined( 'ABSPATH' ) ) exit;
 
+if (! defined( 'CMB_DEV')) {
+	require_once( 'cmb/custom-meta-boxes.php' );
+}
+
 // Load plugin class files
 require_once( 'includes/class-wordpress-plugin-template.php' );
 require_once( 'includes/class-wordpress-plugin-template-settings.php' );
